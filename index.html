@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de Pagamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Folha de Pagamento</h2>
+        <form id="form">
+            <label for="nome">Nome do Funcionário:</label>
+            <input type="text" id="nome" required><br>
+            <label for="salario">Salário:</label>
+            <input type="number" id="salario" required><br>
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+        <div id="resultado" class="hidden">
+            <h3>Resultado:</h3>
+            <p><span id="nomeResultado"></span></p>
+            <p><span id="salarioBruto"></span></p>
+            <p><span id="inssPercent"></span></p>
+            <p><span id="inssValue"></span></p>
+            <p><span id="salarioLiquido"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
